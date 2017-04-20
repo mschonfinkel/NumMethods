@@ -13,7 +13,7 @@ def bissec(f, a, b, epsilon=1e-6, k=128):
 			a = mid
 	return mid
 
-def secant(f, a, b, epsilon1 = 1e-6, epsilon2=1e-6, k=128):
+def falsePostion(f, a, b, epsilon1 = 1e-6, epsilon2=1e-6, k=128):
 	assert not (f(a)*f(b) > 0)
 
 	for i in range(k):
@@ -33,7 +33,7 @@ def secant(f, a, b, epsilon1 = 1e-6, epsilon2=1e-6, k=128):
 
 f = lambda x: pow(x,3) + x - 6
 r = bissec(f, -5, 5)
-r2 = secant(f, -5.0, 5.0)
+r2 = falsePostion(f, -5.0, 5.0)
 
 print('Bissection: ' + str(r) + ' ' + str(f(r)))
-print('Secant: ' + str(r2) + ' ' + str(f(r2)))
+print('False Postion: ' + str(r2) + ' ' + str(f(r2)))
