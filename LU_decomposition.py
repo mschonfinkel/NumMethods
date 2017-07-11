@@ -35,7 +35,9 @@ L,U = LU_dec(A)
 
 pprint = lambda m: '\t' + '\n\t\t'.join(' '.join('{:6s}'.format(str(y)) for y in line) for line in m) + '\n'
 
-print("A = " + pprint(A))
-print("L = " + pprint(L))
-print("U = " + pprint(U))
-
+#print("A = " + pprint(A))
+#print("L = " + pprint(L))
+#print("U = " + pprint(U))
+print(A)
+print(L)
+print(U)

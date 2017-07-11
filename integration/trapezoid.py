@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def trapezoid(f, x, y):
-    return sum((y[1:] + y[:-1])*(x[1:] - x[:-1]))*0.5
+	print(y,x)
+	return sum((y[1:] + y[:-1])*(x[1:] - x[:-1]))*0.5
 
 f1 = lambda x: np.exp(x)
 f2 = lambda x: np.sqrt(x)

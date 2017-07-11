@@ -19,7 +19,6 @@ def lagrange_iter(c : float, L : [point]) -> float:
 
 x = np.linspace(-1.5, 2.5, 50)
 y = lagrange_iter(x, L)
-
 plt.plot(x, y)
 
 plt.plot(L[0].x, L[0].y, marker='o', color='r')
@@ -28,3 +27,5 @@ plt.plot(L[2].x, L[2].y, marker='o', color='r')
 plt.plot(L[3].x, L[3].y, marker='o', color='r')
 
 plt.show()
+
+

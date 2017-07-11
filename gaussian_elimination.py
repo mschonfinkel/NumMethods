@@ -47,6 +47,8 @@ print(b)
 
 A_ = gaussian_elimination(A, b)
 
+print(A_)
+
 A, b = A_[:,range(len(A))], A_[:,-1]
 
 print(solve(A, b))

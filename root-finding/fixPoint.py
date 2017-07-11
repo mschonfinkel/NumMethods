@@ -41,6 +41,6 @@ ax.axvline(x=0, color='k')
 ax.set_ylim([-15,15])
 ax.set_xlim([-15, 15])
 
-ax.plot(r, g(r), "o")
+ax.plot(r, g(r), "o",color="r")
 
 plt.show()
